@@ -1,0 +1,110 @@
+*{
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 300,400,500,600,700;
+  font-style: normal;
+
+}
+::-moz-selection{
+    background: #fff;
+} 
+::selection {
+ 
+  background: #7c3aed46;
+}
+#home {
+   background-image:linear-gradient( rgba(0,0,0,0.7)), url("imag/hero-bg-img.png");
+   background-size: cover;
+   background-position: center;
+   height: 100%;
+   width: 100%;
+}
+
+.nav-link{
+    color: #000000a8
+}
+.nav-link:hover,
+.navbar-brand:hover,
+.Our,
+.Latest{
+    color: var(--main-color);
+} 
+.nav-link{
+    position: relative;
+}
+.nav-link::after{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 8px;
+    width: 0%;
+    height: 2px;
+    background-color: var(--main-color);
+    transition: width 0.2s;
+}
+
+.nav-link:hover::after,
+.navbar-nav .nav-link.active::after{
+    width: 70%;
+}
+
+
+.navbar-nav .nav-link.active ,
+.btn-outline-warning,
+.WHAT{
+    color: var(--main-color);
+}
+.More{
+    color: #fff;
+}
+
+:root {
+    --main-color: #7c3aed;
+    --color-red-500: oklch(63.7% .237 25.331);
+    --color-indigo-500: oklch(58.5% .233 277.117);
+    --color-indigo-600: oklch(51.1% .262 276.966);
+    --color-indigo-700: oklch(45.7% .24 277.023);
+    --color-violet-50: oklch(96.9% .016 293.756);
+    --color-violet-100: oklch(94.3% .029 294.588);
+    --color-violet-200: oklch(89.4% .057 293.283);
+    --color-violet-300: oklch(81.1% .111 293.571);
+    --color-violet-400: oklch(70.2% .183 293.541);
+    --color-violet-500: oklch(60.6% .25 292.717);
+    --color-violet-600: oklch(54.1% .281 293.009);
+    --color-violet-700: oklch(49.1% .27 292.581);
+    --color-violet-900: oklch(38% .189 293.745);
+    --color-purple-500: oklch(62.7% .265 303.9);
+    --color-purple-600: oklch(55.8% .288 302.321);
+    --color-purple-700: oklch(49.6% .265 301.924);
+    --color-purple-900: oklch(38.1% .176 304.987);
+    --color-pink-600: oklch(59.2% .249 .584);
+
+   
+    --color-black: #000;
+    --color-white: #fff;
+   
+}
+.text-violet-600{
+    color: var(--color-violet-600) !important;
+}
+.text-violet-900{
+    color: var(--color-violet-900) !important;
+}
+.text-purple-900{
+    color: var(--color-red-500) !important;
+}
+
+.bg-gradient-to-r {
+   background: linear-gradient(135deg, var(--color-purple-900), var(--color-violet-900));
+    /* background-image: linear-gradient(var(--tw-gradient-stops)); */
+}
+
+.accordion-item:hover{
+    transform: scale(1.05);
+    border: 1px solid var(--main-color);
+    transition: all 0.5s ease-in-out;
+
+}
+.carde img:hover{
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out;
+}
